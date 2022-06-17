@@ -7,6 +7,7 @@ import Home from './components/Home/Home';
 import Reviews from './components/Reviews/Reviews';
 import About from './components/About/About';
 import NotFind from './components/NotFind/NotFind';
+import { useEffect, useState } from 'react';
 
 function App() {
   return (
@@ -19,7 +20,6 @@ function App() {
         <Route path='/About' element={<About></About>}></Route>
         <Route path='*' element={<NotFind></NotFind>}></Route>
       </Routes>
-
 
     </div>
   );

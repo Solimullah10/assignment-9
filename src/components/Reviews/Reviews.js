@@ -1,9 +1,22 @@
-import React from 'react';
-
+import React, { useState } from 'react';
+import Review from '../Review/Review';
 const Reviews = () => {
+    const [users, setUsers] = useState([]);
+
+    useState(() => {
+        fetch('https://jsonplaceholder.typicode.com/users')
+            .then(res => res.json())
+            .then(data => setUsers(data))
+    }, [])
+
     return (
         <div>
-            <h1>reviews page</h1>
+            {
+                users.map(user => <Review
+                    key={user.id}
+                    user={user}
+                ></Review>)
+            }
         </div>
     );
 };
