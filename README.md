@@ -1,5 +1,5 @@
 # Soil-Products-Reviews
- Live server link [live  server link](https://ephemeral-stroopwafel-aa4fc8.netlify.app/g)
+ Live server link [live  server link](https://ephemeral-stroopwafel-aa4fc8.netlify.app/)
 ## About my projects: 
 <ul>
     <li> picture add and website name and products explain this page</li>
