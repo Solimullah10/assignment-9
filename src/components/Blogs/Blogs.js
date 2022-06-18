@@ -3,7 +3,7 @@ import React from 'react';
 const Blogs = () => {
     return (
         <div className='w-11/12 mx-auto'>
-            <h1 className='text-4xl text-left'>Context Api Explain </h1>
+            <h1 className='text-4xl text-left mt-4'>Context Api Explain </h1>
             <p className='text-justify'>
                 The Context API is a React structure that enables you to exchange unique details and assists in solving prop-drilling from all levels of your application.
                 React context is great when you are passing data that can be used in any component in your application
@@ -14,7 +14,7 @@ const Blogs = () => {
                 Another way of consuming context became available in React 16.8 with the arrival of React hooks. We can now consume context with the useContext hook.
                 Instead of using render props, we can pass the entire context object to React.useContext() to consume context at the top of our component.
             </p>
-            <h1 className='text-4xl text-left'>Semantic Tag Explain</h1>
+            <h1 className='text-4xl text-left mt-4'>Semantic Tag Explain</h1>
             <p className='text-justify'>
                 A semantic element clearly describes its meaning to both the browser and the developer.
                 there are semantic tag list are-
@@ -22,7 +22,7 @@ const Blogs = () => {
                 Semantic HTML5 addresses this shortcoming by defining specific tags to indicate clearly what role is played by the content those tags contain. That explicit information helps robots/crawlers like Google and Bing to better understand which content is important, which is a subsidiary, which is for navigation, and so on.
                 By adding semantic HTML tags to your pages, you provide additional information that helps Google and Bing understand the
             </p>
-            <h1 className='text-4xl text-left'>Inline block element Explain</h1>
+            <h1 className='text-4xl text-left mt-4'>Inline block element Explain</h1>
             <p className='text-justify'>
                 Inline elements are those which only occupy the space bounded by the tags defining the element, instead of breaking the flow of the content.An inline element does not start on a new line.
                 An inline element only takes up as much width as necessary.
