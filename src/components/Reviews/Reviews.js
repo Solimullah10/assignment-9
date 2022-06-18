@@ -10,8 +10,8 @@ const Reviews = () => {
         { name: 'Solayman', id: 6, ratings: 5, comment: 'I am very happy for this products' },
     ]
     return (
-        <div className=' bg-indigo-500 py-10'>
-            <h1 className='text-white font-bold text-4xl py-2'> User Reviews</h1>
+        <div className=' bg-indigo-300'>
+            <h1 className='text-white font-bold text-4xl py-5'> User Reviews</h1>
             <div className='grid md:grid-cols-3 gap-3'>
                 {
                     userReview.map(user => <Review

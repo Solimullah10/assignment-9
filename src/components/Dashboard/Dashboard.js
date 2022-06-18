@@ -10,7 +10,6 @@ import {
     CartesianGrid,
     Legend,
     Scatter,
-    ResponsiveContainer,
 } from 'recharts';
 
 
@@ -125,7 +124,8 @@ const Dashboard = () => {
 
     return (
         <div>
-            <div className='md:flex md:w-11/12 mx-auto mt-36 md:mt-0'>
+            <h1 className='text-indigo-500 font-bold text-4xl py-5'> Graph Dashboard</h1>
+            <div className='md:flex md:w-11/12 mx-auto'>
                 <LineChart width={300} height={300} data={data}>
                     <Line dataKey={'revenue'}></Line>
                     <XAxis dataKey={'month'}></XAxis>

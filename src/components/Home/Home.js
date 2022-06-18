@@ -21,7 +21,7 @@ const Home = () => {
                 </div>
                 <img className='md:ml-16 lg:ml-52 w-64 mx-auto' src='filter.png' alt="" />
             </div>
-            <h1 className='text-green-600 font-bold text-4xl py-5'>User Review</h1>
+            <h1 className='text-indigo-500 font-bold text-4xl py-5'>User Reviews</h1>
             <div className='grid md:grid-cols-3 gap-3'>
 
                 {

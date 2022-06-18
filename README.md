@@ -1,4 +1,12 @@
-# Getting Started with Create React App
+# Soil-Products-Reviews
+ Live server link [live  server link](http://google.com)
+## Bullet point: 
+<ul>
+    <li> picture add and website name and products explain this page</li>
+    <li> Customer review and rating point this page</li>
+    <li> graph add this page</li>
+    <li> Basic question ans : inline block element, semantic tag, context api add this page</li>
+</ul>
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
