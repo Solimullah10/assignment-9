@@ -1,22 +1,25 @@
 import React, { useState } from 'react';
 import Review from '../Review/Review';
 const Reviews = () => {
-    const [users, setUsers] = useState([]);
-
-    useState(() => {
-        fetch('https://jsonplaceholder.typicode.com/users')
-            .then(res => res.json())
-            .then(data => setUsers(data))
-    }, [])
-
+    const userReview = [
+        { name: 'solimullah', id: 1, ratings: 4.5, comment: 'Product are beautiful' },
+        { name: 'Al Amin', id: 2, ratings: 4, comment: 'Beautiful soil product which proud of my country' },
+        { name: 'Azmat Ali', id: 3, ratings: 5, comment: 'Good product & see beautiful' },
+        { name: 'Mazidul Islam', id: 4, ratings: 4.5, comment: 'Product are beautiful' },
+        { name: 'Forman Ali', id: 5, ratings: 3.4, comment: 'Average Products' },
+        { name: 'Solayman', id: 6, ratings: 5, comment: 'I am very happy for this products' },
+    ]
     return (
-        <div>
-            {
-                users.map(user => <Review
-                    key={user.id}
-                    user={user}
-                ></Review>)
-            }
+        <div className=' bg-indigo-500 py-10'>
+            <h1 className='text-white font-bold text-4xl py-2'> User Reviews</h1>
+            <div className='grid md:grid-cols-3 gap-3'>
+                {
+                    userReview.map(user => <Review
+                        key={user.id}
+                        user={user}
+                    ></Review>)
+                }
+            </div>
         </div>
     );
 };

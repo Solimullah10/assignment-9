@@ -125,7 +125,7 @@ const Dashboard = () => {
 
     return (
         <div>
-            <div className='md:flex md:w-11/12 mx-auto'>
+            <div className='md:flex md:w-11/12 mx-auto mt-36 md:mt-0'>
                 <LineChart width={300} height={300} data={data}>
                     <Line dataKey={'revenue'}></Line>
                     <XAxis dataKey={'month'}></XAxis>

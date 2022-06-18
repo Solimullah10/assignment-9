@@ -1,7 +1,17 @@
-import React from 'react';
+import React, { useDeferredValue } from 'react';
+import { Link } from 'react-router-dom';
+import Review from '../Review/Review';
+
 
 const Home = () => {
-
+    const userReview = [
+        { name: 'solimullah', id: 1, ratings: 4.5, comment: 'Product are beautiful' },
+        { name: 'Al Amin', id: 2, ratings: 4, comment: 'Beautiful soil product which proud of my country' },
+        { name: 'Azmat Ali', id: 3, ratings: 5, comment: 'Good product & see beautiful' },
+        { name: 'Mazidul Islam', id: 4, ratings: 4.5, comment: 'Product are beautiful' },
+        { name: 'Forman Ali', id: 5, ratings: 3.4, comment: 'Average Products' },
+        { name: 'Solayman', id: 6, ratings: 5, comment: 'I am very happy for this products' },
+    ]
     return (
         <div>
             <div className='grid md:grid-cols-2 w-11/12 mx-auto'>
@@ -11,7 +21,16 @@ const Home = () => {
                 </div>
                 <img className='md:ml-16 lg:ml-52 w-64 mx-auto' src='filter.png' alt="" />
             </div>
-            <button className='text-2xl rounded px-20 py-5 mt-5 bg-indigo-600'>Reviews</button>
+            <h1 className='text-green-600 font-bold text-4xl py-5'>User Review</h1>
+            <div className='grid md:grid-cols-3 gap-3'>
+
+                {
+                    userReview.slice(0, 3).map(user => <Review key={user.id} user={user}></Review>)
+                }
+            </div>
+            <Link to='/Reviews'>
+                <button className='text-2xl text-white rounded px-20 py-5 my-5 bg-indigo-600'>Reviews...{userReview.length}</button>
+            </Link>
 
         </div>
     );
